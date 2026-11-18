@@ -185,4 +185,27 @@ body {
 #projects { background: #a29bfe; }
 #contact { background: #55efc4; }
 
+/* Dark Mode */
+body.dark-mode {
+  background: #1e1e2f;
+  color: #f1f1f1;
+}
+
+body.dark-mode #about { background: #2d3436; }
+body.dark-mode #education { background: #1b3a5c; }
+body.dark-mode #skills { background: #0a4f4c; }
+body.dark-mode #projects { background: #3b3470; }
+body.dark-mode #contact { background: #1f5c4a; }
+
+body.dark-mode .project {
+  background: #2a2a40;
+  color: #f1f1f1;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 
