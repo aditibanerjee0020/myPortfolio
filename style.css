@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fdfdfd;
+  transition: background 0.4s, color 0.4s;
+}
+/* Banner Section */
+.banner {
+  position: relative;
+  background: url('portimage.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 3rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff6a00;
+}
+
+#darkToggle {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#darkToggle:hover {
+  background: #ff6a00;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-content h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.banner-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;   /* ✅ Ensure equal height */
+  border-radius: 50%; 
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  object-fit: cover; /* ✅ Keeps image centered and cropped */
+}
+
+
+.btn {
+  background-color: #ff6a00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ee0979;
+}
+
+/* Sections */
+section {
+  padding: 60px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.skill:hover {
+  background-color: #ff6a00;
+  transform: scale(1.1);
+}
+
+.project {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #ee0979, #ff6a00);
+  color: white;
+  padding: 1rem;
+}
+/* Light Mode (default) */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;   /* soft white */
+  color: #333;           /* dark text */
+  transition: background 0.4s, color 0.4s;
+}
+
+/* Banner (same image for both modes) */
+.banner {
+  position: relative;
+  background: url('portimage.jpg') center/cover no-repeat;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Light Mode */
+#about { background: #ffeaa7; }
+#education { background: #74b9ff; }
+#skills { background: #00cec9; }
+#projects { background: #a29bfe; }
+#contact { background: #55efc4; }
+
+
